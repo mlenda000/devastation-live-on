@@ -13,6 +13,7 @@ const STAMINA_COST:  float = 18.0    # per second while sprinting
 @onready var interact_area: Area2D           = $InteractArea
 @onready var camera:        Camera2D         = $Camera2D
 
+
 var last_direction: Vector2 = Vector2.DOWN
 var is_sprinting:   bool    = false
 var can_interact:   bool    = false

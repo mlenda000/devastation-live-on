@@ -14,6 +14,18 @@ config/name="Devastation_Live-on"
 config/features=PackedStringArray("4.5", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+AudioManager="*res://autoloads/AudioManager.gd"
+GameClock="*res://autoloads/GameClock.gd"
+GameManager="*res://autoloads/GameManager.gd"
+InventoryManager="*res://autoloads/InventoryManager.gd"
+PlayerStats="*res://autoloads/PlayerStats.gd"
+PowerManager="*res://autoloads/PowerManager.gd"
+SaveManager="*res://autoloads/SaveManager.gd"
+SurvivorManager="*res://autoloads/SurvivorManager.gd"
+WorldEventManager="*res://autoloads/WorldEventManager.gd"
+
 [display]
 
 window/size/viewport_width=1280

@@ -1,11 +1,44 @@
-[gd_scene load_steps=43 format=3 uid="uid://b3uluwg403x8s"]
+[gd_scene load_steps=52 format=3 uid="uid://b3uluwg403x8s"]
 
 [ext_resource type="Script" uid="uid://beas1lnfxwe7w" path="res://scenes/player/player.gd" id="1_c3xxp"]
 [ext_resource type="Texture2D" uid="uid://qda0tegmsoro" path="res://assets/characters/player/The Male adventurer - Free/Walk/walk.png" id="2_npwbq"]
+[ext_resource type="Texture2D" uid="uid://do2t66xngds5a" path="res://assets/characters/player/The Male adventurer - Free/Idle/idle_down.png" id="2_v42im"]
 [ext_resource type="Texture2D" uid="uid://sbq5iwis2h6k" path="res://assets/characters/player/The Male adventurer - Free/Walk/walk_left_down.png" id="3_v42im"]
 [ext_resource type="Texture2D" uid="uid://cdkf6kb87o632" path="res://assets/characters/player/The Male adventurer - Free/Walk/walk_right_down.png" id="4_pn6s4"]
 [ext_resource type="Texture2D" uid="uid://uvi7rtgugcu" path="res://assets/characters/player/The Male adventurer - Free/Walk/walk_up.png" id="5_7oing"]
 [ext_resource type="Script" uid="uid://dc554d6v2tvy1" path="res://scenes/player/camera_2d.gd" id="6_5stf6"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pn6s4"]
+atlas = ExtResource("2_v42im")
+region = Rect2(0, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7oing"]
+atlas = ExtResource("2_v42im")
+region = Rect2(48, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5stf6"]
+atlas = ExtResource("2_v42im")
+region = Rect2(96, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wslmf"]
+atlas = ExtResource("2_v42im")
+region = Rect2(144, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3aff"]
+atlas = ExtResource("2_v42im")
+region = Rect2(192, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_n65jb"]
+atlas = ExtResource("2_v42im")
+region = Rect2(240, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lf4f6"]
+atlas = ExtResource("2_v42im")
+region = Rect2(288, 0, 48, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q4eru"]
+atlas = ExtResource("2_v42im")
+region = Rect2(336, 0, 48, 64)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_180ig"]
 atlas = ExtResource("2_npwbq")
@@ -152,7 +185,31 @@ animations = [{
 "name": &"death",
 "speed": 5.0
 }, {
-"frames": [],
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pn6s4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7oing")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5stf6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wslmf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3aff")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_n65jb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lf4f6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q4eru")
+}],
 "loop": true,
 "name": &"idle",
 "speed": 5.0
@@ -284,11 +341,13 @@ radius = 48.0
 height = 22.0
 
 [node name="Player" type="CharacterBody2D"]
+motion_mode = 1
 script = ExtResource("1_c3xxp")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wslmf")
-animation = &"walk_up"
+animation = &"idle"
+frame_progress = 0.24704781
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CapsuleShape2D_u3aff")
