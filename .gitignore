@@ -1,0 +1,153 @@
+# ============================================================
+#  GODOT 4.5 — WastelandSurvival .gitignore
+#  Covers: engine cache, all platform builds, exports, OS junk
+# ============================================================
+
+
+# ── Godot Engine Cache & Generated Files ────────────────────
+.godot/
+*.translation
+*.uid
+.DS_Store
+
+
+# ── Export Presets (may contain signing keys / bundle IDs) ──
+export_presets.cfg
+
+
+# ── Compiled GDScript Bytecode ──────────────────────────────
+*.gdc
+
+
+# ─────────────────────────────────────────────────────────────
+#  iOS / XCODE BUILD FILES
+# ─────────────────────────────────────────────────────────────
+
+# Xcode project output (generated on every export)
+*.xcodeproj/
+*.xcworkspace/
+
+# Xcode build artifacts
+build/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# iOS Godot export folder (entire exported Xcode project)
+ios_export/
+
+# Xcode user-specific state (changes every time you open Xcode)
+*.xcuserstate
+xcuserdata/
+*.xccheckout
+*.moved-aside
+
+# Godot iOS export templates cache
+ios/
+*.pck.ios
+
+# Provisioning profiles & code signing (never commit these)
+*.mobileprovision
+*.p12
+*.cer
+
+
+# ─────────────────────────────────────────────────────────────
+#  ANDROID BUILD FILES
+# ─────────────────────────────────────────────────────────────
+
+# Android Gradle build folder (very large, fully regenerated)
+android/build/
+
+# Android output binaries
+*.apk
+*.aab
+
+# Gradle wrapper and cache
+.gradle/
+gradle/
+gradlew
+gradlew.bat
+local.properties
+
+# Android keystore (contains signing credentials — never commit)
+*.keystore
+*.jks
+
+
+# ─────────────────────────────────────────────────────────────
+#  OTHER PLATFORM EXPORTS
+# ─────────────────────────────────────────────────────────────
+
+# Windows builds
+*.exe
+*.pdb
+*.dll
+
+# macOS builds
+*.dmg
+*.app/
+*.app.zip
+
+# Linux builds
+*.x86_64
+*.x86_32
+*.arm64
+
+# Web / HTML5 export
+*.html
+*.js
+*.wasm
+*.pck
+*.zip
+
+# All export output folders (adjust names to match yours)
+exports/
+builds/
+dist/
+release/
+
+
+# ─────────────────────────────────────────────────────────────
+#  MACOS SYSTEM FILES 
+# ─────────────────────────────────────────────────────────────
+
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+.AppleDouble
+.LSOverride
+Icon?
+
+
+# ─────────────────────────────────────────────────────────────
+#  EDITOR & IDE FILES
+# ─────────────────────────────────────────────────────────────
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# JetBrains (Rider, IntelliJ)
+.idea/
+*.iml
+
+# Vim / Emacs swap files
+*.swp
+*.swo
+*~
+
+
+# ─────────────────────────────────────────────────────────────
+#  LOGS & TEMP FILES
+# ─────────────────────────────────────────────────────────────
+
+*.log
+*.tmp
+*.temp
+logs/
