@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://c804cma0n4v5g"]
+
+[node name="WorldRoot" type="Node2D"]

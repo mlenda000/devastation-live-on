@@ -1,0 +1,3 @@
+[gd_scene format=3 uid="uid://b63bl352wwhu2"]
+
+[node name="SkillTree" type="Node2D"]
