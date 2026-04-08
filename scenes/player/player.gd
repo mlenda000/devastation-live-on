@@ -23,6 +23,7 @@ enum State { IDLE, WALK, SPRINT, DEAD }
 var state: State = State.IDLE
 
 func _ready() -> void:
+	$AnimatedSprite2D.play("idle")
 	PlayerStats.player_died.connect(_on_player_died)
 	add_to_group("player")
 
